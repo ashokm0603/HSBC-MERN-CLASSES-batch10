@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            border-radius: 10px 50px;
+            background-color: palegreen;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        label:last-of-type:after {
+            content: "🔐:";
+        }
+
+        label:first-of-type:after {
+            content: "🙎🏻:";
+        }
+
+        label::before {
+            content: "login ";
+        }
+        h1{
+            font-size: 30px;
+            font-style: italic;
+        }
+
+        h1::first-letter {
+            font-size: 50px;
+            color: red;
+        }
+
+        p::first-line{
+            background-color: red;
+        }
+
+        li::marker{
+            content: "|👉";
+        }
+        p::selection{
+            background-color: purple;
+            color: aliceblue;
+        }
+
+        input::placeholder{
+            color: red;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+
+      
+
+        span{
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <ol>
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+        <li>list-5</li>
+    </ol>
+    <form action="">
+        <fieldset>
+            <h1>Login</h1>
+            <label for="">Username</label>
+            <input type="text" placeholder="username" name="" id="">
+            <br><br>
+            <label for="">Password</label>
+            <input type="password" placeholder="Enter password" name="" id="">
+            <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </fieldset>
+    </form>
+
+
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur tempore omnis est eius voluptas. Voluptas quos sint, soluta deserunt <span>quidem labore, commodi molestiae sed et magni aliquid, explicabo </span> blanditiis fugiat!
+        Rerum, aut aperiam iste itaque quis tempore assumenda voluptates tenetur nemo et molestias incidunt ut porro ad vel eius. Inventore sit ex voluptas corporis reiciendis distinctio harum 
+        <span>alias, quos quisquam!</span>
+    </p>
+</body>
+
+</html>

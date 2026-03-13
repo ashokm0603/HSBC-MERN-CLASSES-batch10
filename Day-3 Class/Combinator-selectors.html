@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <style>
-
-       ul p{
+        ul p {
             background-color: red;
         }
 
-        ol>li{
+        ol>li {
             background-color: salmon;
+        }
+
+        h1+p {
+            background-color: coral;
+            width: 500px;
+            padding: 30px;
+        }
+
+        ol~h1 {
+            color: red;
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
     <h1>Order list</h1>
     <ol>
@@ -25,7 +37,9 @@
         <li>list</li>
     </ol>
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, soluta ex laborum quibusdam incidunt blanditiis est exercitationem molestiae deleniti adipisci quisquam ratione quos culpa aliquam officiis voluptas accusamus id placeat!
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, soluta ex laborum quibusdam incidunt
+        blanditiis est exercitationem molestiae deleniti adipisci quisquam ratione quos culpa aliquam officiis voluptas
+        accusamus id placeat!
 
     </p>
     <h1>Unordered List</h1>
@@ -41,8 +55,11 @@
 
     <h1>Heading one</h1>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sequi deleniti labore rerum quas omnis dignissimos voluptatibus nulla, accusamus tenetur, pariatur eaque nesciunt eveniet molestias vero, dicta facilis magni. Voluptatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sequi deleniti labore rerum quas omnis
+        dignissimos voluptatibus nulla, accusamus tenetur, pariatur eaque nesciunt eveniet molestias vero, dicta facilis
+        magni. Voluptatibus!
     </p>
 
 </body>
+
 </html>
