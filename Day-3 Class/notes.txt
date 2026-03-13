@@ -1,0 +1,22 @@
+CSS  : 
+------
+    
+
+
+Ways to Apply CSS to Web page : 
+    ----------------------------
+         1. Inline CSS / Inline Stylings 
+                ->Applying Stylings by taking 'style attribute' in HTML Element
+                ->CSS selectors for Inline Stylings 
+
+
+         2. Internal CSS/ Internal Stylings
+                ->Applying Stylings by taking 'style tag' in heading section
+                ->To Apply Internal Stylings CSS selectors for required
+
+
+         3. External CSS/  External Stylings    
+                ->Applying Stylings by creating new .css file and link that to .html file using <link>
+                ->To Apply External Stylings CSS selectors for required
+                    1. <link rel="stylesheet" href="filename.css"> 
+                

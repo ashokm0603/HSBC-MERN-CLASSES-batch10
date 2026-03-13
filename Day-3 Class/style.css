@@ -1,0 +1,17 @@
+h1{
+    color: rgb(72, 62, 6);
+    background-color: palegreen;
+    text-align: center;
+}
+
+ol{
+    list-style: none;
+    background-color: palevioletred;
+    padding: 20px;
+}
+li{
+    background-color: aqua;
+    margin: 20px;
+}
+
+
