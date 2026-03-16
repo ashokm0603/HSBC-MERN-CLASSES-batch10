@@ -1,0 +1,138 @@
+Color Values : 
+---------------
+    1. Color name 
+    2. rgb() 
+    3. rgba()
+    4. hsl() 
+    5. hsla()
+    6. hexa code  -> a-f , 0-9 
+
+
+Text Properties in CSS : 
+---------------------------
+    1. text coloring 
+            i. color 
+            ii.text-shadow
+
+
+    2. text alignments
+        i. text-align :left , center , right , justify , start , end
+        ii. letter-spacing 
+        iii.word-spacing 
+        iv. text-indent
+
+
+
+    3. text transform Properties 
+        i. text-transform : uppercase , lowercase , Capitalized
+
+
+    4. text decoration Properties 
+        i.text-decoration-style : dashed , dotted , double , wavy , solid 
+        ii.text-decoration-thickness
+        iii.text-decoration-color
+        iv. text-decoration-line: underline , overline , line-through
+        v. text-decoration(shorthand form)
+
+
+
+
+    5. text overflow Properties 
+        i. overflow :auto , scroll , visible , hidden
+
+    6. font Properties
+        i. font-size 
+        ii.font-weight 
+        iii.font-style 
+        iv. font-family
+
+
+CSS Box Model : 
+-------------
+    1. content 
+    2. padding 
+        ->The space between content and border is called as padding
+        ->padding Properties 
+            1. padding-top 
+            2. padding-left 
+            3. padding-right
+            4. padding-bottom
+            5. padding (short hand form)
+
+    3. border 
+        ->The space between padding and margin is called as border
+        ->Here we can apply style for the border
+
+            border Properties: 
+            -------------------
+             1. border-style 
+             2. border-width 
+             3. border-color
+             4. border 
+
+             5. border-top
+             6. border-right
+             7. border-bottom
+             8. border-left 
+
+    border-radius Properties: 
+    --------------------------
+        1. border-top-left-radius
+        2. border-top-right-radius
+        3. border-bottom-left-radius
+        4. border-bottom-right-radius
+        5. border-radius
+        
+
+        box-shadow :x-axis y-axis alpha colorValue;
+   
+    4. margin
+        ->The space between border and outlook/ outline is called as margin
+        ->margin Properties 
+            1. margin-top 
+            2. margin-left 
+            3. margin-right
+            4. margin-bottom
+            5. margin (short hand form)
+
+
+Display Flex Properties: 
+-----------------------------
+
+    1. display:flex 
+    2. justify-content: center , left , right , space-evenly , space-between , space-around
+
+    3. align-items : center , start , end
+    4. flex-direction :row, column , row-reverse , column-reverse
+    5. flex-warp :nowarp , warp , warp-reverse 
+
+
+    6. flex-grow 
+    7. flex-shrink
+
+
+Display Grid Properties: 
+------------------------
+    1. display:grid 
+    2. grid-template-row 
+    3. grid-template-column
+    4. row-gap 
+    5. column-gap 
+
+
+    6. grid-column-start
+    7. grid-column-end
+    8. grid-row-start
+    9. grid-row-end
+
+
+Animations Properties: 
+----------------------
+
+    ->@keyframe 
+
+    1. animation-name 
+    2 animation-duration 
+    3. animation-timing-function 
+    4. animation-delay 
+    5. animation-iteration-count
