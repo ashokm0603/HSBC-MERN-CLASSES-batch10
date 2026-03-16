@@ -1,0 +1,169 @@
+Javascript : 
+------------
+    ->Javascript is the scripting language as well as programming language
+
+    ->Javascript is the dynamically typed programming 
+    ->Javascript will support Single Call Stack
+
+
+    Why we need Javascript :: 
+    ------------------------
+        1. using Javascript we can build dynamic web application 
+        2. using Javascript we can add functionality to web applications
+        3. using JS We can manipulate HTML , CSS with the help DOM (Document object model)
+        4. we can fetch data from the API's 
+
+
+history : 
+    1. Mocha 1994 (netscape browser company)
+        |
+        2. liveScript 
+            |
+            3. Javascript 
+                | 
+                4. ECMA scripting 1996
+                    ->ES 1 version
+
+
+                    Stable version-> ES 6 
+
+
+
+Methods to write JS :
+------------------------
+ 1. Internal JS 
+ 2. External JS 
+
+
+ Tokens: 
+ -------
+    ->smallest units in the Javascript programming
+    ->Tokens are classified into 6 types 
+        1. identifiers
+            ->identifiers are the names give JS code 
+            ->in the place of identifiers we can not use keywords
+            ->Ex: variable name , class names , function names 
+
+            Rules : 
+                ->identifiers not starts with numbers , special characters instated of _ ,$ 
+                -identifiers doesn't have spaces
+
+            
+        2. keywords 
+                ->keywords predefine words present js programming 
+                ->In js total 66 keywords are present 
+                Ex: class , const , let, var , if, else , while , do, switch , break , case , continue ..etc
+
+        3. literals 
+            ->literals are values given to Js Code 
+            Ex: 
+            String literals             str="java"
+            Numeric literals            num=800
+
+
+
+        4. separators
+            ->separators are used to separate give JS code 
+            Ex: " " ,'' ,`` , ; : , . { } [ ] ( )
+
+        5. operators    
+            ->operators are the symbols use to perform some operations on operands 
+            Ex: 10 + 20
+            Types: 
+            -------
+                1. Athematic operators (+,-,/,%, * ,**)
+                2. logical operators (&& ,|| ,!)
+                3. bitwise operators (&,|,^)
+                4. assignment operators (= ,+= ,-= ,/=,%= ,*=)
+                5. relational operators (>,>= ,< ,<=)
+                6. comparison operators (==,=== ,!=)
+                7. unary operators  (expr-- , expr++ , --expr , ++expr)
+                8. ternary operators (condition ? expr1 : expr2)
+                9. shift operators (>>,<<)
+
+
+        6. comments 
+            ->comments are used to comment given code 
+            ->single line comments , multi line comments
+
+
+Variables: 
+------------
+    ->Variables are memory location used to store data/ values and it can change N of time during execution
+
+
+    i. Variable declaration 
+    ii. variable Initialization 
+    iii.  variable utilization 
+    iv. Variable Re-declaration 
+    vi. variable Re-Initialization 
+
+
+    1.let   
+        ->let Variables act's like a local/block scope variable
+        ->we declare and Initialize let Variables in same line/ different lines is possible
+        -> Re-Initialization is possible but Re-declaration not possible
+        ->we can't hoist let Variables
+
+
+    2.var 
+        ->var Variables act's like a global  variables
+        ->we declare and Initialize var Variables in same line/ different lines is possible
+        -> Re-Initialization and  Re-declaration is possible 
+        ->we can hoist var Variables
+        
+    3.const 
+        ->const  Variables act's like a final variable
+        ->we declare and Initialize const  Variables in same line is possible but in  different lines is not possible
+        -> Re-Initialization and Re-declaration not possible
+        ->we can't hoist const Variables
+     
+
+
+
+
+
+hoisting : 
+----------
+    ->utilizing the variable before declaration 
+    ->hoisting is possible only in var variables 
+
+
+
+Data Types : 
+------------
+    ->what of data we storing in the variables 
+
+    1. Primitive Data types (immutable in nature)
+            1. number 
+            2. string 
+            3. boolean 
+            4. null 
+            5. bigInt 
+            6. undefine 
+            7. symbol
+
+
+            2. string : 
+                ->Group of characters is called as string
+                ->In Js We can declare string 3 different ways : 
+                    1. "" 
+                    2. '' 
+                    3. `` -> string template ( string enterpulation)
+
+                String Inbuilt Methods/ Functions: 
+                -----------------------------------
+                    1. trip()
+                    2. tripStart()
+                    3. tripEnd()
+                    4. Splice()
+                    5. split()
+                    6. replace()
+                    7. replaceAll()
+                    8. toUpperCase()
+                    9. toLowerCase()
+
+    2. Non Primitive Data types (mutable in nature)
+        1. Arrays
+        2. Object 
+        3. Functions 
