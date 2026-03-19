@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#form-container{
+    /* background-color: gray; */
+    padding: 50px;
+}
+
+#form-container fieldset{
+    padding: 50px;
+    background-image: radial-gradient(red , orange);
+    border-radius: 10px 50px;
+}
+
+#form-container button{
+    padding: 8px 10px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 5px;
+}
+
+form h1{
+    margin-bottom: 20px;
+}
+
+#form-container label{
+    font-weight: bold;
+    margin-right: 10px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+label:after{
+    content: ":*";
+}
+
