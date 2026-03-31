@@ -1,0 +1,1 @@
+ERROR: querySrv ECONNREFUSED _mongodb._tcp.cluster1.ydtdzun.mongodb.net

@@ -1,0 +1,386 @@
+
+
+
+React JS: 
+----------
+    ->React Js is the small Javascript library 
+
+    React JS : 
+    ----------
+        ->React Js is the Component based 
+        ->We can build SPA (single page application)
+        ->we built using react js the application ->quick performance
+        ->React JS will support Virtual DOM 
+        ->In react Js they used Diffing 
+        ->Declarative in nature 
+
+
+React App SetUp : 
+-----------------
+
+CLI
+----
+    1. npx(node package executor)
+    2. npm (react+vite)         [node package manager]
+
+
+
+AJAX(asynchronous javascript and XML):
+------------------------------------- 
+
+
+
+JSX (javascript and XML ): 
+-------------------------------
+    ->jsx is similar to HTML 
+    ->JSX file Name starts with UpperCase
+    ->Jsx file will contains both HTMl ,JS 
+
+    ->JSX will support javascript expression -> { }
+    -> return keyword can not return   multiple tags  that will be return one tag (it support parent)
+
+    ->JSX will support empty fragments (<></>)
+
+
+
+Components in React js : 
+---------------------------
+    ->smallest UI(user interface ) blocks in the Screen/Webpage
+
+    ->Types  : 
+        1. Class Based Component (CBC)
+            ->any Components declare using class keywords 
+            ->CBC is also called as stateful Components
+            ->CBC states are present 
+            ->super keyword , this keyword and constructor , render() is present 
+            ->life cycle methods present
+
+
+        2. function Based Component(FBC)
+            ->any Components declare using function keywords 
+            ->FBC is also called as stateless Components
+            ->FBC states are not present 
+            ->super keyword , this keyword and constructor is  not present 
+            ->life cycle methods also not  present
+
+            16.8 version->hooks 
+            ->Hooks are  used to make function based Components StateFull / function based Components dynamic 
+            ->hooks are present only in FBC
+            ->Ex: useState(), useEffect() , useNavigate() , useMemo() , useContext(),useRef()..etc 
+
+
+
+States in React : 
+-----------------
+ ->states are used to hold data 
+ ->states are mutable in nature
+ ->states are present only class based Component 
+
+
+
+ VS code extensions: 
+    1. auto close tag 
+    2. auto complete tag 
+    3. Simple React Snippets 
+    4. VS-Code Icons 
+    5. ES7+React/ Redux/ React Native    -dsznajder
+    6. auto import 
+    7. Auto Import - ES6, TS, JSX, TSX 
+
+
+
+
+EventHandlers 
+
+ Props in React JS : 
+-------------------
+    ->Props  are used to transfer data from one Component to another Component 
+    ->Props are immutable 
+    ->React will support unidirectional data flow 
+    ->Props are present both class based Components and function based Components
+
+
+React Routers : 
+----------------
+    ->npm install react-router-dom
+
+
+E-Commerce App 
+----------------
+
+    Requirements 
+        1. Admin Register 
+        2. Admin Login 
+        3. add Products 
+        4. display Products 
+        5. Edit Products 
+        6. Edit required Product Details
+        7. Delete Product Details 
+        8. View all users 
+
+
+     UI Pages : 
+        1. landing page 
+        2. register page 
+        3. login page 
+        4. admin home page 
+        5. view products page 
+        6. edit product details page 
+        7. delete product Details 
+
+
+
+1970 DBMS 
+
+RDBMS (Mysql , sql , posters sql , sql server)
+create table empDetails(id int , name varchar(25)) 
+
+2000 
+
+2005 
+
+
+NoSql : 
+--------
+    Ex: MongoDB ,Apache cassandra ,Apache HBase , google firebase , Neo4j , Redis..etc 
+
+
+MongoDB: 
+--------
+    ->MongoDB is the NoSql Database use to store and manage the Data
+    ->In MongoDB data will be storing Document format (JSON /BSON)
+    ->In MongoDB will support unstructured or semi-structured data 
+    ->MongoDB will follow Flexible schema 
+    ->more scalable database 
+    ->horizontal scaling 
+
+
+
+Database : 
+------------
+    ->database is the where we can store the data 
+    ->to create Database : 
+        syntax: 
+                use DatabaseName 
+
+    ->to delete database 
+        syntax : 
+            db.drop()
+
+Collection: 
+--------------
+    ->Collection is the group of documents in MongoDB 
+    ->to create Collection 
+        syntax : 
+            db.createCollection('collectionName')
+
+ 
+ Insert Document : 
+ ------------------
+    ->we two functions to Insert documents into collection
+        1. insertOne()
+            ->insertOne() is used to insert only one document at a time 
+            ->syntax : 
+                db.collectionName.insertOne({document})
+        1. insertMany()
+            ->insertMany() is used to insert  one or more documents at a time into collection
+            ->syntax : 
+                db.collectionName.insertMany([
+                                                {document1}, 
+                                                {document2},
+                                                {document3},
+                                                {document4},
+                                                ...
+                                            ])
+
+    Data Types: 
+    ------------
+        1. Strings 
+        2. numbers 
+        3. boolean 
+        4. null
+        5. arrays 
+        6. object 
+        7. functions 
+        8. date  : Date()
+        9. time : Timestamps()   // ISODate()
+
+
+
+
+retrieve Data from collection ::  
+----------------------------------
+    1. findOne()
+        ->findOne() function is used to retrieve/ read only one document from the collection
+            i.without filter 
+                syntax: db.collectionName.findOne({}) 
+
+            ii. filter data : 
+                syntax: db.collectionName.findOne({filter data})
+            
+            iii. projections : 
+                    ->projections are used to display only required fields 
+                    ->to display fields then we need to password value -> 1 / true 
+                    ->if don't want to display to fields then here to use value - 0 / false
+
+                    syntax : 
+                        db.collectionName.findOne({filter data } , {project query })
+
+
+
+    2. find()
+
+        ->find() function is used to retrieve/ read multiple  documents from the collection
+            i.without filter 
+                syntax: db.collectionName.find({}) 
+
+            ii. filter data : 
+                syntax: db.collectionName.find({filter data})
+            
+            iii. projections : 
+                    ->projections are used to display only required fields 
+                    ->to display fields then we need to password value -> 1 / true 
+                    ->if don't want to display to fields then here to use value - 0 / false
+
+                    syntax : 
+                        db.collectionName.find({filter data } , {project query })
+
+
+
+Update Document Data: 
+--------------------
+    1. updateOne()
+        ->updateOne() is used to update only one document at a time 
+        ->using update operators we can update document
+            i. $set : 
+            ->used to update values / insert new fields to document
+                syntax: 
+                    db.collectionName.updateOne({filter condition},{updated query })
+
+                Example: 
+                db.studentDetails.updateOne(
+                        {rollNo:"Hu2025"},
+                        {
+                            $set:{name:"Sai Kumar"}
+                        }
+                    )
+
+            ii. $unset 
+                ->to remove fields
+                syntax: 
+                    db.collectionName.updateOne({filter condition},{updated query })
+
+                Example: 
+                db.studentDetails.updateOne(
+                        {rollNo:"Hu2025"},
+                        {
+                            $unset:{name:""}
+                        }
+                    )
+
+
+            iii. $rename 
+            ->used to modify key names in document
+
+                syntax: 
+                    db.collectionName.updateOne({filter condition},{updated query })
+
+                Example: 
+                db.studentDetails.updateOne(
+                        {rollNo:"Hu2025"},
+                        {
+                            $rename:{name:"stdName"}
+                        }
+                    )
+
+            iv. $pop 
+            v. $push 
+            iv. $pull 
+            db.studentDetails.updateOne(
+                 {rollNo:'Hu2026'},
+                    {$pull:{skills:'MongoDB'}}
+                    )
+
+
+            iiv . $inc 
+
+
+
+    2. updateMany()
+
+
+
+Delete Document : 
+------------------
+    1. deleteOne()
+        ->deleteOne() is used to delete only one document at a time 
+
+        syntax : 
+            db.collectionName.deleteOne({filter data})
+
+    2. deleteMany()
+        ->deleteMany() is used to delete multiple documents at a time 
+
+        syntax : 
+            db.collectionName.deleteMany({filter data})
+
+
+Node JS : 
+---------
+    ->node js server side javascript run time environment 
+
+
+    1. Inbuilt Node Core Module : 
+    -----------------------------
+        i. fs module 
+        ii. os module 
+        iii. http module 
+        iv . path module
+
+
+    Importing  and exporting modules 
+        ->with the help 'require()' key we can import modules 
+        ->to export modules 
+                module.exports
+
+
+
+
+Express: 
+--------
+    ->Express js the node framework 
+    ->with the help of Express we can create server 
+
+
+backend application
+-------------------
+    1. npm init -y
+    2. npm install express
+
+
+
+MVC: 
+    1. model 
+    2. view 
+    3. controller
+
+
+
+
+
+
+API End points : 
+    1. http://localhost:5000/api/register       -->post request   [in body (name, email, phone, gender, state, password, address)] 
+    2. http://localhost:5000/api/login          ---> post request   [in body (username , password)] 
+    3. http://localhost:5000/api/get-allusers   -->get request 
+    3. http://localhost:5000/api/update-profile/id      -->patch request 
+
+
+
+
+    4. http://localhost:5000/api/add-product                ->Post 
+    5. http://localhost:5000/api/get-product/id             ->get  
+    6. http://localhost:5000/api/update-product/productId   ->Put 
+    7. http://localhost:5000/api/get-allproducts             ->get  
+    8. http://localhost:5000/api/delete-product             ->delete 
+    

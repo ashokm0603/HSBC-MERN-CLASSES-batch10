@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#form-container{
+    /* background-color: gray; */
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container h1{
+    text-decoration: none !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#form-container fieldset{
+    width: 500px;
+    padding: 50px;
+    background-image: radial-gradient(red , orange);
+    border-radius: 10px 50px;
+}
+
+#form-container button{
+    padding: 8px 10px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 8px ;
+    border: none;
+}
+
+#form-container input, #form-container textarea{
+    padding: 2px; 
+    border-radius: 5px ;
+    border: none;
+    box-shadow: 3px 3px 3px black;
+}
+
+form h1{
+    margin-bottom: 20px;
+
+}
+
+#form-container label{
+    font-weight: bold;
+    margin-right: 10px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+label:after{
+    content: ":*";
+}
+
+
+
+
+
+#add-product-container{
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+#search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#search-container input{
+    height: 38px;
+    width: 450px;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+
+#title{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 70px;
+    
+}
