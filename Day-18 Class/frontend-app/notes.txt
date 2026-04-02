@@ -1,0 +1,28 @@
+Controlled forms  / Controlled Components : 
+-------------------------------------------
+    ->Controlled forms handled By react (States)
+    ->Event ->onchange()  , states -> useState() 
+
+    ->performance is slidly slow
+    ->need to use useState() hook
+    ->attribute onChange={}
+    
+UnControlled forms  / UnControlled Components : 
+-----------------------------------------------
+    ->UnControlled forms handle by DOM 
+    ->Event -> ref()  ->useRef()
+
+    ->fast in performance
+    ->need to use useRef() hook 
+    ->attribute ref={} 
+
+
+useMemo() hook : 
+----------------
+    ->used to prevent re-render the Component 
+    ->useMemo() are use during to memorize the data during calculation 
+    ->using useMemo() hook we can increase performance (quick loading)
+    ->syntax: 
+            useMemo(callback Function , [])
+
+            Ex: useMemo(()=>{} ,[] )

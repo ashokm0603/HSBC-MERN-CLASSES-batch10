@@ -1,0 +1,80 @@
+Controlled forms  / Controlled Components : 
+-------------------------------------------
+    ->Controlled forms handled By react (States)
+    ->Event ->onchange()  , states -> useState() 
+
+    ->performance is slidly slow
+    ->need to use useState() hook
+    ->attribute onChange={}
+    
+UnControlled forms  / UnControlled Components : 
+-----------------------------------------------
+    ->UnControlled forms handle by DOM 
+    ->Event -> ref()  ->useRef()
+
+    ->fast in performance
+    ->need to use useRef() hook 
+    ->attribute ref={} 
+
+
+useMemo() hook : 
+----------------
+    ->used to prevent re-render the Component 
+    ->useMemo() are use during to memorize the data during calculation 
+    ->using useMemo() hook we can increase performance (quick loading)
+    ->syntax: 
+            useMemo(callback Function , [])
+
+
+
+useReducer() hook : 
+-------------------
+  -> useReducer() is a React hook used for State management especially when 
+        1. state logic is Complex 
+        2. Multiple state Transactions  are involved
+        3. you want a cleaner alternative to multiple 'useState' calls 
+
+Syntax: 
+    const [state, dispatch]=useReducer(reducer , initialState) 
+
+    state ->Current state 
+    dispatch -> Function to send actions 
+    reducer ->Function that updates state 
+    initialState -> starting value 
+
+
+Basic Work Flow: 
+------------------  
+    1. user trigger action 
+    2. dispatch(action) is called 
+    3. reducer processes action 
+    4. state updates 
+
+
+
+
+Props : 
+------- 
+    ->Props are used to transfer data from Component to another Component
+    ->Props immutable in nature 
+    ->React will support unidirectional Data 
+     Data->  grandparent Component
+                    -> 
+                        parent Component
+                                    -> 
+                                       Child Component 
+                                                ->
+                                                 grand Child Component (data using)
+
+
+    ->Props Drilling
+
+Context API : 
+--------------
+    ->Context API in React is used to share data globally across Component without Props drilling  
+
+Steps to use Context API 
+-------------------------
+    1. create Context  
+    2. Provide Context 
+    3. Consume Consume
