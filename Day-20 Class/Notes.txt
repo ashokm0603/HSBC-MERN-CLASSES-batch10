@@ -1,0 +1,31 @@
+JWT Authentication: 
+-------------------
+    ->JWT(JSON Web Token ) is used to securely transmit user data between client and server 
+
+    Flow: 
+        1. user logs in 
+        2. server verifies credentials 
+        3. server sends the JWT tokens
+        4. Client stores token (local storage / cookies) 
+        5. Client sends token in API requests 
+
+We can generate two tokens : 
+----------------------------- 
+    1. Access Token  ->short expiry
+    2. Refresh Token  ->used to regenerate access token 
+
+SignUp Flow : 
+-------------
+    1. user enters details 
+    2. send data to backend 
+    3. backend stored user(hashed password) 
+    4. return success response 
+
+Login Flow : 
+-------------
+1. user enters email and password 
+2. backend validates 
+3. generate : 
+            1. access token 
+            2. Refresh token
+4. send token to frontend
